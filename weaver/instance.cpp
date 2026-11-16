@@ -169,9 +169,7 @@ bool operator==(const Decl &d0, const Decl &d1) {
 				return false;
 			}
 		}
-	} else if (not d0.hashed or not d1.hashed) {
-		internal("", "decl not hashed", __FILE__, __LINE__);
-	} else if (d0.argsHash != d1.argsHash) {
+	} else if (d0.hashed and d1.hashed and d0.argsHash != d1.argsHash) {
 		return false;
 	}
 	return true;

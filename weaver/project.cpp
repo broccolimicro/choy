@@ -47,7 +47,7 @@ Project::Project(fs::path root) {
 	rootDir = workDir;
 	while (not rootDir.empty()
 		and rootDir.parent_path() != rootDir
-		and not fs::exists(rootDir / "lm.mod")) {
+		and not fs::exists(rootDir / "bok.mod")) {
 		rootDir = rootDir.parent_path();
 	}
 
@@ -59,12 +59,12 @@ Project::Project(fs::path root) {
 	includePath.push_back(rootDir / VENDOR);
 	includePath.push_back(rootDir / BUILD);
 
-	char *loom_tech = std::getenv("LOOM_TECH");
-	if (loom_tech != nullptr) {
-		techDir = fs::path(loom_tech);
+	char *bok_tech = std::getenv("BOK_TECH");
+	if (bok_tech != nullptr) {
+		techDir = fs::path(bok_tech);
 	} else {
 #if defined(_WIN32) || defined(_WIN64)
-		techDir = fs::path("C:\\Program Files (x86)\\Loom\\share\\tech");
+		techDir = fs::path("C:\\Program Files (x86)\\Bok\\share\\tech");
 #else
 		techDir = fs::path("/usr/local/share/tech");
 #endif
@@ -469,7 +469,7 @@ void Project::setTech(string cmd) {
 	if (not fs::exists(path)) {
 		string pathstr = path.string();
 		printf("tech directory '%s' not found\n", pathstr.c_str());
-		printf("the tech directory may be specified using the $LOOM_TECH variable\n");
+		printf("the tech directory may be specified using the $BOK_TECH variable\n");
 		return;
 	}
 
@@ -500,7 +500,7 @@ vector<string> Project::listTech() const {
 }
 
 bool Project::hasMod() const {
-	return not rootDir.empty() and fs::exists(rootDir / "lm.mod");
+	return not rootDir.empty() and fs::exists(rootDir / "bok.mod");
 }
 
 void Project::vendor() const {
@@ -553,7 +553,7 @@ string Project::pathToModule(fs::path path) const {
 		}
 		return (fs::path(modName) / dirInModule).string();
 	} else if (top == VENDOR) {
-		// TODO(edward.bingham) parse the lm.mod file in the vendor directory
+		// TODO(edward.bingham) parse the bok.mod file in the vendor directory
 		return popTopDir(dirInModule);
 	}
 	return dirInModule;

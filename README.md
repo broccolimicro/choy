@@ -1,10 +1,10 @@
 # Weaver
 
-Weaver is a compiler framework for hardware description languages within the Loom CAD ecosystem. It provides a flexible architecture for representing, analyzing, and transforming hierarchical hardware designs with a focus on asynchronous circuits.
+Weaver is a compiler framework for hardware description languages within the Bok CAD ecosystem. It provides a flexible architecture for representing, analyzing, and transforming hierarchical hardware designs with a focus on asynchronous circuits.
 
 ## Overview
 
-Weaver serves as the foundational layer of the Loom hardware compilation and verification system. It provides:
+Weaver serves as the foundational layer of the Bok hardware compilation and verification system. It provides:
 
 - A modular architecture for organizing hardware designs
 - A type system supporting both data types and interfaces
@@ -88,7 +88,7 @@ make coverage
 
 ## Integration
 
-Weaver is designed to integrate with other components in the Loom ecosystem:
+Weaver is designed to integrate with other components in the Bok ecosystem:
 
 - Relies on `parse` and `common` libraries
 - Potentially targets LLVM/MLIR for code generation
@@ -101,12 +101,12 @@ Licensed by Broccoli, LLC under GNU GPL v3.
 Written by Ned Bingham.
 Copyright © 2025 Broccoli, LLC.
 
-Loom is free software: you can redistribute it and/or modify
+Bok is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
 the Free Software Foundation, either version 3 of the License, or
 (at your option) any later version.
 
-Loom is distributed in the hope that it will be useful,
+Bok is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 GNU General Public License for more details.
