@@ -1,6 +1,6 @@
 #include "symbol.h"
 
-namespace weaver {
+namespace choy {
 
 Scope::Scope() {
 	parent = -1;

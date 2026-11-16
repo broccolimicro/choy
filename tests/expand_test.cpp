@@ -1,8 +1,8 @@
 #include <gtest/gtest.h>
 #include <common/text.h>
-#include <weaver/expand.h>
+#include <choy/expand.h>
 
-using namespace weaver;
+using namespace choy;
 
 // Helper function to create a program with nested types for testing
 Program createNestedTypesProgram() {

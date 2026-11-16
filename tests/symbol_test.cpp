@@ -1,7 +1,7 @@
 #include <gtest/gtest.h>
-#include <weaver/symbol.h>
+#include <choy/symbol.h>
 
-using namespace weaver;
+using namespace choy;
 
 // Helper function to set up a basic scope
 Scope createTestScope() {

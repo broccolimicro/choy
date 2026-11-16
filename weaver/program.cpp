@@ -1,6 +1,6 @@
 #include "program.h"
 
-namespace weaver {
+namespace choy {
 
 Module::Module() {
 	isTech = false;

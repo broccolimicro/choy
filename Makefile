@@ -1,4 +1,4 @@
-NAME          = weaver
+NAME          = choy
 DEPEND        = boolean parse common
 TEST_DEPEND   = boolean parse common
 

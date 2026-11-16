@@ -6,7 +6,7 @@
 using std::vector;
 using std::string;
 
-namespace weaver {
+namespace choy {
 
 // TypeId is a reference to a specific type within a specific module
 // Used to uniquely identify a type across the entire program

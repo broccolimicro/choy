@@ -11,7 +11,7 @@
 #include <parse/syntax.h>
 #include <parse/tokenizer.h>
 
-namespace weaver {
+namespace choy {
 
 struct Variant {
 	std::any def;

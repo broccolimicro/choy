@@ -1,10 +1,10 @@
-# Weaver
+# Choy
 
-Weaver is a compiler framework for hardware description languages within the Bok CAD ecosystem. It provides a flexible architecture for representing, analyzing, and transforming hierarchical hardware designs with a focus on asynchronous circuits.
+Choy is a compiler framework for hardware description languages within the Bok CAD ecosystem. It provides a flexible architecture for representing, analyzing, and transforming hierarchical hardware designs with a focus on asynchronous circuits.
 
 ## Overview
 
-Weaver serves as the foundational layer of the Bok hardware compilation and verification system. It provides:
+Choy serves as the foundational layer of the Bok hardware compilation and verification system. It provides:
 
 - A modular architecture for organizing hardware designs
 - A type system supporting both data types and interfaces
@@ -13,11 +13,11 @@ Weaver serves as the foundational layer of the Bok hardware compilation and veri
 - Variable expansion and scope management
 - Cross-module type and function resolution
 
-Weaver is designed to accommodate hardware specifications at various levels of abstraction, from high-level communicating processes (CHP) down to production rule sets (PRS) for asynchronous circuit implementation.
+Choy is designed to accommodate hardware specifications at various levels of abstraction, from high-level communicating processes (CHP) down to production rule sets (PRS) for asynchronous circuit implementation.
 
 ## Architecture
 
-Weaver uses a hierarchical organization model:
+Choy uses a hierarchical organization model:
 
 - **Program**: Top-level container for all modules
 - **Module**: Compilation units containing terms and types
@@ -48,7 +48,7 @@ Weaver uses a hierarchical organization model:
 
 ### Type System
 
-Weaver supports two fundamental kinds of types:
+Choy supports two fundamental kinds of types:
 - **Regular Types** (`TYPE`): Can have both data members and methods
 - **Interfaces** (`INTERFACE`): Can only have methods
 
@@ -68,7 +68,7 @@ The dialect system allows for multiple hardware description languages to coexist
 
 ## Building
 
-To build the weaver library:
+To build the choy library:
 
 ```bash
 make lib
@@ -88,7 +88,7 @@ make coverage
 
 ## Integration
 
-Weaver is designed to integrate with other components in the Bok ecosystem:
+Choy is designed to integrate with other components in the Bok ecosystem:
 
 - Relies on `parse` and `common` libraries
 - Potentially targets LLVM/MLIR for code generation

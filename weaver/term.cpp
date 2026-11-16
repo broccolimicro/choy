@@ -1,6 +1,6 @@
 #include "term.h"
 
-namespace weaver {
+namespace choy {
 
 Variant::Variant(Metadata meta, std::any def, int super) : meta(meta) {
 	this->super = super;

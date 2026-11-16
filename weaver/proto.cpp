@@ -4,7 +4,7 @@
 #include <common/hash.h>
 #include <common/text.h>
 
-namespace weaver {
+namespace choy {
 
 const std::string label = "wv-";
 

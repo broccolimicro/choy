@@ -2,12 +2,12 @@
 
 #include <common/standard.h>
 
-#include <weaver/program.h>
-#include <weaver/project.h>
+#include <choy/program.h>
+#include <choy/project.h>
 
 #include <boolean/cover.h>
 
-namespace weaver {
+namespace choy {
 
 struct Target {
 	std::map<std::string, std::string> enums;

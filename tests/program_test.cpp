@@ -1,7 +1,7 @@
 #include <gtest/gtest.h>
-#include <weaver/program.h>
+#include <choy/program.h>
 
-using namespace weaver;
+using namespace choy;
 
 // Setup helper function to create a test program with modules and types
 Program createTestProgram() {

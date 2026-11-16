@@ -2,7 +2,7 @@
 
 #include <common/message.h>
 
-namespace weaver {
+namespace choy {
 
 TypeId::TypeId() {
 	mod = -1;

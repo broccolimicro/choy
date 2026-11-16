@@ -3,7 +3,7 @@
 #include <string>
 #include <vector>
 
-namespace weaver {
+namespace choy {
 
 struct Typename {
 	Typename();

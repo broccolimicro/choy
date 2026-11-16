@@ -9,7 +9,7 @@
 using std::vector;
 using std::set;
 
-namespace weaver {
+namespace choy {
 
 // VariableExpander traverses nested type hierarchies to flatten them
 // This is useful for analyzing complex nested structures or generating

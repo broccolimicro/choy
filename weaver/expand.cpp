@@ -1,6 +1,6 @@
 #include "expand.h"
 
-namespace weaver {
+namespace choy {
 
 VariableExpander::VariableExpander(const Program &prgm) : prgm(prgm) {
 	// Initialize with a reference to the program

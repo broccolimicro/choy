@@ -8,7 +8,7 @@
 using std::vector;
 using std::string;
 
-namespace weaver {
+namespace choy {
 
 // Type represents a data type or interface definition in the program
 struct Type {

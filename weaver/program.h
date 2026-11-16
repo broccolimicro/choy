@@ -10,7 +10,7 @@
 using std::vector;
 using std::string;
 
-namespace weaver {
+namespace choy {
 
 // Module represents a collection of terms (functions/processes) and types
 // within the same namespace. It acts like a compilation unit.

@@ -12,7 +12,7 @@ using std::vector;
 using std::string;
 using std::any;
 
-namespace weaver {
+namespace choy {
 
 // TODO(edward.bingham) Syntax directed translation from CHP to val-rdy
 // dataflow blocks to map to FPGA Golang runtime with thread bool for parallel
@@ -56,13 +56,13 @@ struct SymbolTable {
 	Instance find(string name) const;
 };
 
-// Variables in Weaver are compound (type, interface)
+// Variables in Choy are compound (type, interface)
 // Variables in flow are channels (type)
 // Variables in chp are data (fixed, float, bool)
 // Variables in hse and prs are wires (bool)
 
-// How do I map variables in chp back to weaver?
-// Weaver should have some structure to keep track of instances. but does scope matter? Scope only matters to avoid overlap of variable names, so only matters during interpretation.
+// How do I map variables in chp back to choy?
+// Choy should have some structure to keep track of instances. but does scope matter? Scope only matters to avoid overlap of variable names, so only matters during interpretation.
 
 
 /*Instance at(Module &types, SymbolTable &symb, vector<int> idx);

@@ -1,7 +1,7 @@
 #include "meta.h"
 #include "term.h"
 
-namespace weaver {
+namespace choy {
 
 Metadata::Metadata(std::string dialect) {
 	this->dialect = dialect;

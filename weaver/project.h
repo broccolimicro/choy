@@ -1,14 +1,14 @@
 #pragma once
 
 #include <parse/factory.h>
-#include <weaver/program.h>
-#include <weaver/proto.h>
+#include <choy/program.h>
+#include <choy/proto.h>
 
 #include <filesystem>
 
 namespace fs = std::filesystem;
 
-namespace weaver {
+namespace choy {
 
 struct Project;
 struct Filetype;

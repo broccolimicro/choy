@@ -6,7 +6,7 @@
 #include <common/timer.h>
 #include <common/text.h>
 
-namespace weaver {
+namespace choy {
 
 Target::Target() {
 	progress = false;

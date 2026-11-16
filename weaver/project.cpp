@@ -5,7 +5,7 @@
 #include <filesystem>
 #include <set>
 
-namespace weaver {
+namespace choy {
 
 Filetype::Filetype() {
 	read = nullptr;
@@ -274,7 +274,7 @@ bool Project::load(Program &prgm) {
 
 	std::set<fs::path> buildImports;
 	while (not sources.empty()) {
-		std::vector<weaver::TermId> loaded;
+		std::vector<choy::TermId> loaded;
 		if (sources.back().filetype->load != nullptr) {
 			loaded = sources.back().filetype->load(*this, prgm, sources.back());
 		}
@@ -318,7 +318,7 @@ bool Project::load(Program &prgm) {
 
 bool Project::save(Program &prgm, TermId id) {
 	if (id.hasVar()) {
-		const weaver::Variant &variant = prgm.varAt(id);
+		const choy::Variant &variant = prgm.varAt(id);
 		if (variant.fromSource) {
 			return false;
 		}

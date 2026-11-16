@@ -5,7 +5,7 @@
 #include <string>
 #include <any>
 
-namespace weaver {
+namespace choy {
 
 // This is used to store data from analysis passes.
 struct Metadata {

@@ -1,6 +1,6 @@
 #include "type.h"
 
-namespace weaver {
+namespace choy {
 
 Type::Type() {
 	// Default constructor creates an empty type

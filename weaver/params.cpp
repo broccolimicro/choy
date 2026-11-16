@@ -1,7 +1,7 @@
 #include "params.h"
 #include <common/text.h>
 
-namespace weaver {
+namespace choy {
 
 std::map<std::string, std::string> readParams(const std::vector<std::string> &params) {
 	std::map<std::string, std::string> result;
