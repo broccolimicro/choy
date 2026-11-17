@@ -6,7 +6,7 @@
 
 namespace choy {
 
-const std::string label = "wv-";
+const std::string label = "ch-";
 
 Typename::Typename() {
 }

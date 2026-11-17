@@ -6,7 +6,7 @@ namespace choy {
 std::map<std::string, std::string> readParams(const std::vector<std::string> &params) {
 	std::map<std::string, std::string> result;
 	for(std::string line : params) {
-		auto pos = line.find("!wv ");
+		auto pos = line.find("!ch ");
 		if (pos != string::npos) {
 			line = line.substr(pos+4);
 			std::vector<std::string> args = splitArguments(line);
@@ -32,7 +32,7 @@ std::string writeParams(const std::map<std::string, std::string> &params) {
 	if (params.empty()) {
 		return result;
 	}
-	result += "!wv";
+	result += "!ch";
 	for (auto i = params.begin(); i != params.end(); i++) {
 		result += " " + i->first + "=\"" + i->second + "\"";
 	}
